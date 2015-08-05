@@ -1,6 +1,6 @@
 main = do
-    putStrLn (hello "bobby")
-    putStrLn (hello "World!")
+    putStrLn (greet "bobby")
+    putStrLn (greet "World")
     putStrLn (show (3+4))
 
-hello name = "Hello " ++ name
+greet name = "Hello " ++ name ++ "!"

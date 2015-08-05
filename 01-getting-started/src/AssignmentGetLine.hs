@@ -1,6 +1,6 @@
 main = do
     name <- getLine
-    putStrLn (hello name)
+    putStrLn (greet name)
 
-hello name = "Hello " ++ name
+greet name = "Hello " ++ name ++ "!"
 

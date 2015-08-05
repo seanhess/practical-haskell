@@ -1,1 +1,1 @@
-Source code for Practical Haskell tutorials. See [http://seanhess.github.io](http://seanhess.github.io)
+Source code for [Practical Haskell tutorials](http://seanhess.github.io/2015/08/04/practical-haskell-getting-started.html)

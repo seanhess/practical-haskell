@@ -24,6 +24,7 @@ matchesId id user = userId user == id
 
 main = do
   putStrLn "Starting Server..."
+
   scotty 3000 $ do
     get "/hello/:name" $ do
       name <- param "name"
@@ -35,3 +36,8 @@ main = do
     get "/users/:id" $ do
       id <- param "id"
       json (filter (matchesId id) allUsers)
+
+    -- assignment: post user and print it out
+    post "/users" $ do
+      user <- jsonData :: ActionM User
+      json user

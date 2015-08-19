@@ -1,3 +1,5 @@
+module Main where
+
 import Data.Time (getCurrentTime)
 import System.IO (readFile)
 
